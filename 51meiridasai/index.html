@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>51每日大赛今日吃瓜-每日大赛参赛作品与热议话题</title>
+<meta name="description" content="51每日大赛今日吃瓜聚焦每日大赛参赛作品与热议话题，整理今日榜单、争议回应、评审规则变化与围观指南。每天更新参赛条目、评论样本与时间线，帮你看懂当天发生了什么、依据是什么、哪些说法还站不住脚。">
+<meta name="keywords" content="51每日大赛今日吃瓜">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2410c'/%3E%3Cpath d='M9 22l5-12 4 7 5-9v14z' fill='%23fff7ed'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"51每日大赛今日吃瓜","description":"每日大赛参赛作品、榜单与热议话题的整理与核对。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"每日大赛的参赛作品当天能改几次？","acceptedAnswer":{"@type":"Answer","text":"按现行赛事公告，作品提交后在当日 23:00 截止前可修改两次，第三次起修改记录会在作品页公开标注。"}},
+{"@type":"Question","name":"今日吃瓜榜的分数怎么算？","acceptedAnswer":{"@type":"Answer","text":"榜单分数由评审分、观众投票和互动热度按 5:3:2 加权，热度含评论、收藏与转发，不含机器批量点赞。"}},
+{"@type":"Question","name":"串场作品为什么会被取消当日成绩？","acceptedAnswer":{"@type":"Answer","text":"串场指同一账号或用例在多赛道重复参赛，赛务组核对提交时间戳与作者信息后取消当日成绩，可在次日申诉窗口提交材料。"}},
+{"@type":"Question","name":"评论区截图能不能当作评审依据？","acceptedAnswer":{"@type":"Answer","text":"截图只能作为线索，评审以作品原件、版本记录和提交后台日志为准，单独截图不改变计分。"}},
+{"@type":"Question","name":"围观新作品先看哪些信息？","acceptedAnswer":{"@type":"Answer","text":"先看提交时间、修改次数和赛道归属，再看作者说明与评审批注，最后对照当日榜单分项。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#1c1917; --ink-2:#44403c; --ink-3:#78716c;
+  --paper:#fdfcf9; --paper-2:#f5f1e8; --line:#e2ddd2;
+  --brand:#c2410c; --brand-d:#9a3412; --accent:#0f766e;
+  --gold:#b45309; --up:#15803d; --down:#b91c1c;
+  --fs-1:clamp(1.7rem,4.6vw,2.65rem);
+  --fs-2:1.28rem; --fs-3:1.03rem; --fs-4:.9rem; --fs-5:.8rem;
+  --sp-1:.35rem; --sp-2:.7rem; --sp-3:1.1rem; --sp-4:1.7rem; --sp-5:2.6rem;
+  --r-1:6px; --r-2:10px; --r-3:16px;
+  --sh-1:0 1px 2px rgba(28,25,23,.06),0 6px 18px -10px rgba(28,25,23,.18);
+  --sh-2:0 2px 6px rgba(28,25,23,.08),0 14px 34px -18px rgba(28,25,23,.28);
+  --ann-h:38px; --head-h:60px;
+  --max:1180px;
+  --font:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.75;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--brand-d);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--sp-2);font-weight:700}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.25rem}
+li{margin-bottom:.35rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.1rem}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:.6rem 1rem;z-index:200}
+.skip:focus{left:.5rem;top:.5rem}
+section[id],article[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+/* 公告条 */
+.ann{position:sticky;top:0;z-index:70;background:linear-gradient(90deg,#7c2d12,#9a3412 55%,#7c2d12);color:#ffedd5;font-size:var(--fs-5)}
+.ann .wrap{display:flex;align-items:center;gap:.7rem;min-height:var(--ann-h);flex-wrap:wrap;padding-top:.3rem;padding-bottom:.3rem}
+.ann b{background:#ffedd5;color:#7c2d12;border-radius:999px;padding:.05rem .5rem;font-size:.72rem;letter-spacing:.04em;flex:none}
+.ann p{margin:0;font-size:var(--fs-5);line-height:1.5}
+.ann a{color:#ffedd5;text-decoration:underline;text-underline-offset:3px}
+/* 页头 */
+.head{position:sticky;top:var(--ann-h);z-index:60;background:rgba(253,252,249,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;gap:.9rem;min-height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:800;color:var(--ink);letter-spacing:.01em;flex:none}
+.brand svg{width:30px;height:30px;flex:none}
+.brand span{font-size:1.02rem}
+.nav{display:flex;gap:.15rem;margin-left:auto;flex-wrap:wrap;align-items:center}
+.nav a{color:var(--ink-2);font-size:var(--fs-4);padding:.4rem .55rem;border-radius:var(--r-1)}
+.nav a:hover{background:var(--paper-2);color:var(--brand-d);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:.5rem}
+.btn-menu{display:none;align-items:center;gap:.4rem;background:var(--paper-2);border:1px solid var(--line);color:var(--ink);border-radius:var(--r-1);padding:.45rem .7rem;font-size:var(--fs-4);cursor:pointer;font-family:inherit}
+.btn-menu .bars{display:inline-block;width:15px;height:11px;position:relative}
+.btn-menu .bars::before,.btn-menu .bars::after,.btn-menu .bars i{content:"";position:absolute;left:0;height:2px;width:15px;background:var(--ink);border-radius:2px}
+.btn-menu .bars::before{top:0}.btn-menu .bars i{top:4.5px}.btn-menu .bars::after{top:9px}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.2rem .25rem .2rem .7rem;gap:.25rem}
+.search input{border:0;background:transparent;font-family:inherit;font-size:var(--fs-4);width:8.6rem;padding:.28rem 0;color:var(--ink)}
+.search input:focus{outline:none}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:.3rem .7rem;font-size:var(--fs-5);cursor:pointer;font-family:inherit}
+.search-msg{font-size:var(--fs-5);color:var(--down);display:none;padding:.25rem 0 0}
+.search-msg.on{display:block}
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:
+ radial-gradient(900px 340px at 88% -10%,#ffedd5 0%,transparent 62%),
+ linear-gradient(180deg,#fbf7ef,#fdfcf9 78%);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--sp-4);padding-top:var(--sp-5);padding-bottom:var(--sp-5);align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:.45rem;font-size:var(--fs-5);color:var(--brand-d);background:#fff;border:1px solid #f3d5b5;border-radius:999px;padding:.2rem .7rem;margin-bottom:var(--sp-2)}
+.hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);flex:none}
+h1{font-size:var(--fs-1);letter-spacing:-.01em;margin-bottom:var(--sp-2)}
+h1 em{font-style:normal;color:var(--brand-d)}
+.hero-lead{color:var(--ink-2);font-size:var(--fs-3);max-width:34em;margin-bottom:var(--sp-3)}
+.hero-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.btn{display:inline-flex;align-items:center;gap:.4rem;border-radius:calc(var(--r-2) - 2px);padding:.55rem 1rem;font-size:var(--fs-4);font-weight:600;border:1px solid transparent;transition:transform .16s ease,background .16s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-1{background:var(--brand);color:#fff}
+.btn-1:hover{background:var(--brand-d)}
+.btn-2{background:#fff;color:var(--brand-d);border-color:#e7cdb4}
+.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;border-top:1px dashed var(--line);padding-top:var(--sp-3);max-width:30rem}
+.hero-stats div{min-width:0}
+.hero-stats b{display:block;font-size:1.22rem;color:var(--brand-d);line-height:1.3}
+.hero-stats span{font-size:var(--fs-5);color:var(--ink-3);display:block;line-height:1.45}
+.hero-art{position:relative;min-height:250px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 24px rgba(154,52,18,.14))}
+@media (max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero-art{order:2;min-height:0}}
+/* 主布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 296px;gap:var(--sp-4);padding-top:var(--sp-4);padding-bottom:var(--sp-5)}
+.main{min-width:0}
+.aside{min-width:0}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r-3);box-shadow:var(--sh-1)}
+.block{margin-bottom:var(--sp-4)}
+.block-head{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.block-head h2{font-size:var(--fs-2);margin:0}
+.block-head .hint{font-size:var(--fs-5);color:var(--ink-3)}
+.eyebrow{font-size:var(--fs-5);letter-spacing:.12em;color:var(--brand-d);font-weight:700;text-transform:uppercase}
+/* 概览 */
+.overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-2)}
+.ov{padding:var(--sp-3);border:1px solid var(--line);border-radius:var(--r-2);background:var(--paper-2)}
+.ov h3{font-size:var(--fs-3);margin-bottom:.25rem}
+.ov p{font-size:var(--fs-4);color:var(--ink-2);margin:0}
+.ov .num{font-size:1.4rem;font-weight:800;color:var(--brand-d);display:block;line-height:1.2}
+@media (max-width:880px){.overview{grid-template-columns:1fr}}
+/* 精选卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-3)}
+.carditem{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r-2);overflow:hidden;transition:transform .16s ease,box-shadow .16s ease}
+.carditem:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.carditem img{width:100%;height:132px;object-fit:cover;background:var(--paper-2)}
+.carditem .body{padding:var(--sp-3);display:flex;flex-direction:column;gap:.35rem;flex:1}
+.carditem h3{font-size:var(--fs-3);margin:0}
+.carditem p{font-size:var(--fs-4);color:var(--ink-2);margin:0}
+.meta{display:flex;gap:.5rem;flex-wrap:wrap;font-size:var(--fs-5);color:var(--ink-3);margin-top:auto;padding-top:.3rem}
+.tag{display:inline-block;background:#fff2e6;color:#9a3412;border:1px solid #f6dcc4;border-radius:999px;padding:0 .5rem;font-size:var(--fs-5);line-height:1.7}
+.tag.cool{background:#e7f4f2;color:#0f5e58;border-color:#c6e7e2}
+.tag.gray{background:var(--paper-2);color:var(--ink-2);border-color:var(--line)}
+/* 最新更新 紧凑列表 */
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{display:grid;grid-template-columns:78px minmax(0,1fr);gap:.8rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:var(--fs-4)}
+.timeline li:last-child{border-bottom:0}
+.timeline time{color:var(--brand-d);font-weight:700;font-variant-numeric:tabular-nums}
+.timeline .t{color:var(--ink)}
+.timeline .t b{font-weight:600}
+/* 分类入口 标签索引 */
+.indexgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-2)}
+.idx{display:block;padding:.7rem .8rem;border:1px solid var(--line);border-radius:var(--r-2);background:#fff;color:var(--ink);font-size:var(--fs-4);transition:transform .16s ease,border-color .16s ease}
+.idx:hover{text-decoration:none;border-color:#e0b48f;transform:translateY(-2px)}
+.idx b{display:block;font-size:var(--fs-3);margin-bottom:.1rem}
+.idx span{font-size:var(--fs-5);color:var(--ink-3)}
+@media (max-width:880px){.indexgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 深度解析 */
+.deep{border:1px solid var(--line);border-radius:var(--r-3);background:#fff;overflow:hidden}
+.deep .lead{padding:var(--sp-4) var(--sp-4) var(--sp-3);background:linear-gradient(180deg,#fff9f2,#fff);border-bottom:1px solid var(--line)}
+.deep .lead h2{font-size:1.5rem;margin-bottom:.4rem}
+.deep .lead p{color:var(--ink-2);margin:0;font-size:var(--fs-4)}
+.deep-body{display:grid;grid-template-columns:minmax(0,1fr) 236px;gap:0}
+.deep-main{padding:var(--sp-4)}
+.deep-main h3{font-size:var(--fs-3);margin-top:var(--sp-4);padding-top:var(--sp-2);border-top:1px solid var(--line)}
+.deep-main h3:first-child{margin-top:0;border-top:0;padding-top:0}
+.deep-main p{font-size:var(--fs-4);color:var(--ink-2)}
+.deep-main p strong{color:var(--ink)}
+.judge{background:var(--paper-2);border-left:3px solid var(--brand);padding:var(--sp-3);border-radius:0 var(--r-2) var(--r-2) 0;margin-bottom:var(--sp-3)}
+.judge p{margin:0;font-size:var(--fs-4);color:var(--ink)}
+.deep-side{padding:var(--sp-4);border-left:1px solid var(--line);background:#fdfbf6;font-size:var(--fs-4)}
+.deep-side h3{font-size:var(--fs-4);margin-bottom:.5rem}
+.checks{list-style:none;padding:0;margin:0 0 var(--sp-3)}
+.checks li{padding:.4rem 0;border-bottom:1px dashed var(--line);display:flex;gap:.45rem;align-items:flex-start;color:var(--ink-2);font-size:var(--fs-4)}
+.checks li:last-child{border-bottom:0}
+.checks .k{color:var(--accent);font-weight:800;flex:none}
+.checks .x{color:var(--down);font-weight:800;flex:none}
+@media (max-width:880px){.deep-body{grid-template-columns:1fr}.deep-side{border-left:0;border-top:1px solid var(--line)}}
+/* 对照面板 */
+.panelgrid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
+.panel{border:1px solid var(--line);border-radius:var(--r-2);padding:var(--sp-3);background:#fff}
+.panel h3{font-size:var(--fs-3);display:flex;align-items:center;gap:.4rem}
+.panel h3 .pip{width:9px;height:9px;border-radius:2px;background:var(--up);flex:none}
+.panel.warn h3 .pip{background:var(--gold)}
+.panel ul{margin:0;padding-left:1.1rem;font-size:var(--fs-4);color:var(--ink-2)}
+@media (max-width:600px){.panelgrid{grid-template-columns:1fr}}
+/* 步骤 */
+.steps{counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 var(--sp-3) 2.6rem;border-left:2px solid #f0dcc8;margin-left:.8rem}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{content:counter(s);position:absolute;left:-1.05rem;top:0;width:1.95rem;height:1.95rem;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:grid;place-items:center;font-size:var(--fs-4)}
+.steps h3{font-size:var(--fs-3);margin-bottom:.2rem}
+.steps p{font-size:var(--fs-4);color:var(--ink-2);margin:0}
+/* FAQ */
+details{background:#fff;border:1px solid var(--line);border-radius:var(--r-2);padding:.15rem .9rem;margin-bottom:.55rem}
+details[open]{border-color:#e0b48f;background:#fffcf8}
+summary{cursor:pointer;font-weight:600;font-size:var(--fs-4);padding:.6rem 0;list-style:none;display:flex;justify-content:space-between;gap:.6rem;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:800;color:var(--brand-d);flex:none;transition:transform .15s ease}
+details[open] summary::after{content:"–"}
+details p{font-size:var(--fs-4);color:var(--ink-2);margin:0 0 .7rem}
+/* 评论 */
+.cmts{display:grid;gap:var(--sp-2)}
+.cmt{display:grid;grid-template-columns:38px minmax(0,1fr);gap:.7rem;padding:var(--sp-3);background:#fff;border:1px solid var(--line);border-radius:var(--r-2)}
+.ava{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;font-size:var(--fs-4)}
+.cmt .who{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap;font-size:var(--fs-5);color:var(--ink-3)}
+.cmt .who b{color:var(--ink);font-size:var(--fs-4)}
+.cmt p{margin:.2rem 0 0;font-size:var(--fs-4);color:var(--ink-2)}
+.cmt .ref{color:var(--brand-d);font-weight:600}
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{counter-increment:rk;display:grid;grid-template-columns:2rem minmax(0,1fr) auto;gap:.6rem;align-items:center;padding:.55rem 0;border-bottom:1px dashed var(--line);font-size:var(--fs-4)}
+.rank li:last-child{border-bottom:0}
+.rank li::before{content:counter(rk);font-weight:800;color:var(--brand-d);background:#fff2e6;border-radius:6px;text-align:center;line-height:1.8}
+.rank .nm b{display:block;color:var(--ink)}
+.rank .nm span{color:var(--ink-3);font-size:var(--fs-5)}
+.rank .sc{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent)}
+/* 引用卡 */
+.quote{margin:0;padding:var(--sp-4);border-radius:var(--r-3);background:linear-gradient(135deg,#0f766e,#115e59);color:#ecfdf5;box-shadow:var(--sh-1)}
+.quote blockquote{margin:0 0 .6rem;font-size:var(--fs-3);line-height:1.8}
+.quote figcaption{font-size:var(--fs-5);color:#a7f3d0}
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-3);padding:var(--sp-3);margin-bottom:var(--sp-3);box-shadow:var(--sh-1)}
+.side-card h2,.side-card h3{font-size:var(--fs-3);margin-bottom:.6rem}
+.side-nav{list-style:none;padding:0;margin:0;font-size:var(--fs-4)}
+.side-nav a{display:block;padding:.35rem .55rem;border-radius:var(--r-1);color:var(--ink-2);border-left:2px solid transparent}
+.side-nav a:hover{background:var(--paper-2);text-decoration:none}
+.side-nav a.active{color:var(--brand-d);background:#fff2e6;border-left-color:var(--brand);font-weight:700}
+.mini{list-style:none;padding:0;margin:0;font-size:var(--fs-4)}
+.mini li{padding:.4rem 0;border-bottom:1px dashed var(--line);display:grid;gap:.1rem}
+.mini li:last-child{border-bottom:0}
+.mini b{font-weight:600;color:var(--ink)}
+.mini span{color:var(--ink-3);font-size:var(--fs-5)}
+.side-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+/* 相关资讯 */
+.news{display:grid;gap:.6rem}
+.news a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.7rem;padding:.55rem .7rem;border:1px solid var(--line);border-radius:var(--r-2);background:#fff;color:var(--ink)}
+.news a:hover{border-color:#e0b48f;text-decoration:none;background:#fffcf8}
+.news .d{font-size:var(--fs-5);color:var(--brand-d);font-variant-numeric:tabular-nums;padding-top:.15rem;white-space:nowrap}
+.news .h{font-size:var(--fs-4)}
+.news .s{font-size:var(--fs-5);color:var(--ink-3);display:block}
+/* 推荐标签 */
+.recs{display:flex;flex-wrap:wrap;gap:.45rem}
+.recs a{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--ink-2);border-radius:999px;padding:.32rem .8rem;font-size:var(--fs-4);transition:transform .14s ease,border-color .14s ease}
+.recs a:hover{transform:translateY(-2px);border-color:#e0b48f;color:var(--brand-d);text-decoration:none}
+/* 页尾 */
+.foot{background:#1c1917;color:#d6d3d1;padding:var(--sp-5) 0 var(--sp-3);margin-top:var(--sp-4)}
+.foot .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-4)}
+.foot h2{font-size:var(--fs-3);color:#fff;margin-bottom:.5rem}
+.foot h3{font-size:var(--fs-4);color:#fff;margin-bottom:.5rem}
+.foot p{font-size:var(--fs-4);color:#a8a29e;margin-bottom:.5rem}
+.foot ul{list-style:none;padding:0;margin:0;font-size:var(--fs-4)}
+.foot li{margin-bottom:.35rem}
+.foot a{color:#d6d3d1}
+.foot a:hover{color:#fff}
+.foot .brandline{display:flex;align-items:center;gap:.55rem;margin-bottom:.7rem;color:#fff;font-weight:800;font-size:1.05rem}
+.foot .brandline svg{width:28px;height:28px}
+.foot-bottom{border-top:1px solid #3f3b38;margin-top:var(--sp-4);padding-top:var(--sp-3);font-size:var(--fs-5);color:#a8a29e;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+@media (max-width:880px){.foot .cols{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot .cols{grid-template-columns:1fr}}
+/* 回到顶部 */
+.totop{position:fixed;right:1rem;bottom:1.2rem;width:44px;height:44px;border-radius:50%;border:1px solid #e7cdb4;background:#fff;color:var(--brand-d);font-size:1rem;font-weight:800;cursor:pointer;box-shadow:var(--sh-2);display:none;place-items:center;z-index:40}
+.totop.on{display:grid}
+.totop:hover{background:#fff2e6}
+/* 响应式 */
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:880px){
+  .layout{grid-template-columns:1fr}
+  .aside{order:2}
+  .btn-menu{display:inline-flex}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:.6rem 1rem;box-shadow:var(--sh-2);flex-direction:column;align-items:stretch;gap:.1rem}
+  .nav.open{display:flex}
+  .nav a{padding:.55rem .6rem;border-radius:var(--r-1)}
+  .head .wrap{flex-wrap:nowrap}
+  .search input{width:6.2rem}
+}
+@media (max-width:560px){
+  .cards{grid-template-columns:1fr}
+  .search{display:none}
+  .head .wrap{gap:.5rem}
+  .brand span{font-size:.95rem}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .timeline li{grid-template-columns:66px minmax(0,1fr);gap:.5rem;font-size:.85rem}
+  .quote{padding:var(--sp-3)}
+  .totop{right:.7rem;bottom:.8rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+  .btn:hover,.carditem:hover,.idx:hover,.recs a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<!-- 吸顶公告条 -->
+<div class="ann" role="region" aria-label="站内更新公告">
+  <div class="wrap">
+    <b>更新</b>
+    <p>11月8日赛事日榜 09:00 已换榜：<strong>“城市折叠”</strong>赛道新增 1 条复审记录，串场判定 2 例撤销。<a href="/#latest">查看更新明细</a></p>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="51每日大赛今日吃瓜 首页">
+      <svg viewBox="0 0 32 32" role="img" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#c2410c"></rect>
+        <path d="M8.5 23.5 14 9.5l4 6.6 5.5-8.2v15.6z" fill="#fff7ed"></path>
+        <circle cx="24.4" cy="9.4" r="2.6" fill="#fdba74"></circle>
+      </svg>
+      <span>51每日大赛今日吃瓜</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主题导航">
+      <a href="/#overview">赛事概览</a>
+      <a href="/#picks">今日精选</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">围观指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#rank">今日榜单</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search" role="search" id="searchForm">
+        <label for="q" class="skip">站内搜索</label>
+        <input id="q" name="q" type="search" placeholder="搜赛道 / 作品 / 时间线" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+      <button class="btn-menu" id="menuBtn" aria-expanded="false" aria-controls="nav">
+        <span class="bars" aria-hidden="true"><i></i></span>
+        <span>频道</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 首屏 -->
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <span class="hero-kicker"><span class="dot" aria-hidden="true"></span>11月8日 · 第 47 赛日 · 全天 6 个赛道</span>
+        <h1 id="heroTitle">51每日大赛今日吃瓜<em>：当天比了什么、谁被质疑、依据在哪</em></h1>
+        <p class="hero-lead">把每天散落在作品页、评审批注和评论区的信息按时间码对齐：哪条作品今天改了两次、哪条串场判定被撤销、哪段截图缺少后台日志支撑。看热闹之前先看依据。</p>
+        <div class="hero-actions">
+          <a class="btn btn-1" href="/#picks">看今日精选 9 条</a>
+          <a class="btn btn-2" href="/#deep">读深度解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>386</b><span>今日提交作品</span></div>
+          <div><b>17</b><span>复审与申诉记录</span></div>
+          <div><b>4/3/2/1</b><span>评审分权重口径</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 330" role="img">
+          <defs>
+            <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fff7ed"></stop>
+              <stop offset="1" stop-color="#fed7aa"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="16" y="22" width="388" height="286" rx="20" fill="url(#hg)" stroke="#e7cdb4"></rect>
+          <rect x="42" y="50" width="196" height="14" rx="7" fill="#c2410c" opacity=".85"></rect>
+          <rect x="42" y="78" width="130" height="9" rx="4.5" fill="#9a3412" opacity=".55"></rect>
+          <g fill="#fff" stroke="#e7cdb4">
+            <rect x="42" y="108" width="106" height="80" rx="10"></rect>
+            <rect x="160" y="108" width="106" height="80" rx="10"></rect>
+            <rect x="278" y="108" width="106" height="80" rx="10"></rect>
+          </g>
+          <g fill="#c2410c" opacity=".9">
+            <rect x="56" y="124" width="58" height="8" rx="4"></rect>
+            <rect x="174" y="124" width="66" height="8" rx="4"></rect>
+            <rect x="292" y="124" width="48" height="8" rx="4"></rect>
+          </g>
+          <g fill="#78716c" opacity=".75">
+            <rect x="56" y="142" width="76" height="6" rx="3"></rect>
+            <rect x="174" y="142" width="72" height="6" rx="3"></rect>
+            <rect x="292" y="142" width="70" height="6" rx="3"></rect>
+            <rect x="56" y="156" width="52" height="6" rx="3"></rect>
+            <rect x="174" y="156" width="60" height="6" rx="3"></rect>
+            <rect x="292" y="156" width="44" height="6" rx="3"></rect>
+          </g>
+          <rect x="42" y="204" width="342" height="1" fill="#e7cdb4"></rect>
+          <g>
+            <circle cx="62" cy="238" r="12" fill="#0f766e"></circle>
+            <circle cx="62" cy="238" r="4.5" fill="#ecfdf5"></circle>
+            <rect x="86" y="226" width="150" height="8" rx="4" fill="#44403c" opacity=".6"></rect>
+            <rect x="86" y="242" width="212" height="7" rx="3.5" fill="#78716c" opacity=".55"></rect>
+          </g>
+          <g>
+            <circle cx="62" cy="278" r="12" fill="#b45309"></circle>
+            <circle cx="62" cy="278" r="4.5" fill="#fffbeb"></circle>
+            <rect x="86" y="266" width="188" height="8" rx="4" fill="#44403c" opacity=".6"></rect>
+            <rect x="86" y="282" width="146" height="7" rx="3.5" fill="#78716c" opacity=".55"></rect>
+          </g>
+          <path d="M330 236l22 22-8 8-22-22z" fill="#9a3412" opacity=".8"></path>
+          <circle cx="366" cy="66" r="20" fill="#fdba74" opacity=".8"></circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <!-- 主内容 -->
+    <div class="main">
+
+      <!-- 板块1 领域概览 -->
+      <section class="block" id="overview" aria-labelledby="ovTitle">
+        <div class="block-head">
+          <span class="eyebrow">概览</span>
+          <h2 id="ovTitle">每日大赛是怎么运转的</h2>
+          <span class="hint">第 47 赛日 · 2026-11-08</span>
+        </div>
+        <div class="overview">
+          <div class="ov">
+            <h3>赛道与提交</h3>
+            <span class="num">6 个赛道</span>
+            <p>城市折叠、微短剧、海报重排、数据可视化、口头表达、混剪二创。每赛道单日提交上限 80 条，账号实名登记后可提交。</p>
+          </div>
+          <div class="ov">
+            <h3>计分口径</h3>
+            <span class="num">5 : 3 : 2</span>
+            <p>评审分 50%、观众投票 30%、互动热度 20%。热度取评论、收藏、转发，机器批量点赞由风控剔除，当日 23:00 结算。</p>
+          </div>
+          <div class="ov">
+            <h3>当天节奏</h3>
+            <span class="num">23:00 截止</span>
+            <p>09:00 换榜、14:00 复审窗口、18:00 申诉截止、23:00 成绩锁定。跨日争议进入次日 10:00 复核会。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块2 精选内容推荐 -->
+      <section class="block" id="picks" aria-labelledby="picksTitle">
+        <div class="block-head">
+          <span class="eyebrow">精选</span>
+          <h2 id="picksTitle">今日值得点开看的 9 条作品</h2>
+          <span class="hint">按赛道分布，不按热度排序</span>
+        </div>
+        <div class="cards">
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47a/480/300" width="480" height="300" loading="lazy" alt="城市折叠赛道作品《早高峰的九站》分镜拼贴">
+            <div class="body">
+              <span class="tag">城市折叠</span>
+              <h3>早高峰的九站</h3>
+              <p>作者用一张地铁线路图叠了 9 段通勤镜头，每站配 1 句乘客原话。评审批注写“转场干净，但第 7 站说明缺来源”。</p>
+              <div class="meta"><span>10:42 提交</span><span>修改 1 次</span><span>评审 41.5</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47b/480/300" width="480" height="300" loading="lazy" alt="微短剧赛道作品《三分钟退租》室内场景剧照">
+            <div class="body">
+              <span class="tag">微短剧</span>
+              <h3>三分钟退租</h3>
+              <p>全片 178 秒，一镜到底拍了退租验房。争议点在台词“押金全退”，评论指出与作者自述的扣款情节矛盾。</p>
+              <div class="meta"><span>11:08 提交</span><span>修改 2 次</span><span>评审 38.0</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47c/480/300" width="480" height="300" loading="lazy" alt="海报重排赛道作品《菜市场的十二种字体》印刷品照片">
+            <div class="body">
+              <span class="tag cool">海报重排</span>
+              <h3>菜市场的十二种字体</h3>
+              <p>采集 12 家摊位手写价签，重排成一张 A1 海报。作者公开了采集时间与摊位编号，评审在可核验一项给了满分。</p>
+              <div class="meta"><span>13:20 提交</span><span>修改 0 次</span><span>评审 43.0</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47d/480/300" width="480" height="300" loading="lazy" alt="数据可视化赛道作品《387 条外卖备注》折线图">
+            <div class="body">
+              <span class="tag">数据可视化</span>
+              <h3>387 条外卖备注</h3>
+              <p>统计一周外卖备注里“不要香菜”出现 61 次。图表标注了样本期与来源，但未说明去重规则，被评审扣 1 分。</p>
+              <div class="meta"><span>14:05 提交</span><span>修改 1 次</span><span>评审 39.5</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47e/480/300" width="480" height="300" loading="lazy" alt="口头表达赛道作品《我妈的砍价话术》录音波形图">
+            <div class="body">
+              <span class="tag cool">口头表达</span>
+              <h3>我妈的砍价话术</h3>
+              <p>95 秒录音，拆了 4 轮砍价对话。作者标注了录音日期与市场名，评论区补了第 5 轮被删掉的讨价还价。</p>
+              <div class="meta"><span>15:30 提交</span><span>修改 0 次</span><span>评审 40.5</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47f/480/300" width="480" height="300" loading="lazy" alt="混剪二创赛道作品《老片里的雨天》画面截图">
+            <div class="body">
+              <span class="tag">混剪二创</span>
+              <h3>老片里的雨天</h3>
+              <p>素材标注了 11 部影片与时间码，版权说明写“教学用途”。因第 8 段未标出处，被要求 18:00 前补全。</p>
+              <div class="meta"><span>16:12 提交</span><span>修改 2 次</span><span>评审 37.5</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47g/480/300" width="480" height="300" loading="lazy" alt="城市折叠赛道作品《夜班公交末站》站台夜景">
+            <div class="body">
+              <span class="tag">城市折叠</span>
+              <h3>夜班公交末站</h3>
+              <p>跟拍末班车 3 晚，记录 6 位乘客的下车点。作者说明未拍摄面部，但仍被问及乘客口头同意是否有记录。</p>
+              <div class="meta"><span>17:26 提交</span><span>修改 1 次</span><span>评审 42.0</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47h/480/300" width="480" height="300" loading="lazy" alt="海报重排赛道作品《旧超市小票重构》拼贴图">
+            <div class="body">
+              <span class="tag cool">海报重排</span>
+              <h3>旧超市小票重构</h3>
+              <p>把 8 张 2019 年的超市小票重排成价目表。数字可逐项核对，评审称“信息密度高，但色彩层级偏乱”。</p>
+              <div class="meta"><span>18:40 提交</span><span>修改 0 次</span><span>评审 41.0</span></div>
+            </div>
+          </article>
+          <article class="carditem">
+            <img src="https://picsum.photos/seed/daily47i/480/300" width="480" height="300" loading="lazy" alt="数据可视化赛道作品《一分钟电梯停靠》柱状图">
+            <div class="body">
+              <span class="tag">数据可视化</span>
+              <h3>一分钟电梯停靠</h3>
+              <p>记录写字楼 6 部电梯的停靠层，做成 24 小时柱状图。样本来自 11 月 5 日单日，作者自己标注了“单日不外推”。</p>
+              <div class="meta"><span>19:18 提交</span><span>修改 1 次</span><span>评审 38.5</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 板块3 最新更新 -->
+      <section class="block" id="latest" aria-labelledby="latestTitle">
+        <div class="block-head">
+          <span class="eyebrow">时间线</span>
+          <h2 id="latestTitle">今天 09:00—21:00 的更新记录</h2>
+          <span class="hint">时间取自赛务后台与作品页公开批次</span>
+        </div>
+        <ol class="timeline">
+          <li><time datetime="2026-11-08T09:00">09:00</time><span class="t">日榜换榜，<b>“城市折叠”</b>赛道前 3 名互换，第 2 名与第 3 名分差 0.5 分。</span></li>
+          <li><time datetime="2026-11-08T10:15">10:15</time><span class="t"><b>《三分钟退租》</b>作者补交第二稿，把“押金全退”改成“押金扣 200 元”，评论围绕改动时间展开。</span></li>
+          <li><time datetime="2026-11-08T11:40">11:40</time><span class="t">赛务发布复审说明：<b>串场判定</b>撤销 2 例，涉事账号当日成绩恢复，但保留观察标记。</span></li>
+          <li><time datetime="2026-11-08T13:05">13:05</time><span class="t"><b>《老片里的雨天》</b>第 8 段补标出处，版权说明改为逐段标注，评审分由 36.0 调至 37.5。</span></li>
+          <li><time datetime="2026-11-08T14:30">14:30</time><span class="t">新增<b>评审批注公开</b>规则：前 20 名作品须公开至少 2 条评审意见，当日先行执行 11 条。</span></li>
+          <li><time datetime="2026-11-08T16:00">16:00</time><span class="t"><b>《387 条外卖备注》</b>补充去重规则说明：同一订单多菜品记 1 条，样本由 412 条修正为 387 条。</span></li>
+          <li><time datetime="2026-11-08T18:00">18:00</time><span class="t">申诉窗口关闭，收到 5 份材料，其中 3 份涉及<b>作品相似度</b>，2 份涉及热度剔除异议。</span></li>
+          <li><time datetime="2026-11-08T20:20">20:20</time><span class="t"><b>《夜班公交末站》</b>作者上传乘客口头同意录音片段 2 段，时长共 46 秒，未含面部画面。</span></li>
+        </ol>
+      </section>
+
+      <!-- 板块4 分类入口 -->
+      <section class="block" id="channels" aria-labelledby="chTitle">
+        <div class="block-head">
+          <span class="eyebrow">频道</span>
+          <h2 id="chTitle">按赛道和话题找作品</h2>
+          <span class="hint">10 个入口，均对应页面内可浏览内容</span>
+        </div>
+        <div class="indexgrid">
+          <a class="idx" href="/#picks"><b>城市折叠</b><span>街景、通勤、夜间观察</span></a>
+          <a class="idx" href="/#picks"><b>微短剧</b><span>3 分钟内单场景叙事</span></a>
+          <a class="idx" href="/#picks"><b>海报重排</b><span>字体、价签、旧物重构</span></a>
+          <a class="idx" href="/#picks"><b>数据可视化</b><span>样本、去重、图表标注</span></a>
+          <a class="idx" href="/#picks"><b>口头表达</b><span>录音、对话、话术拆解</span></a>
+          <a class="idx" href="/#picks"><b>混剪二创</b><span>素材出处与版权说明</span></a>
+          <a class="idx" href="/#deep"><b>串场判定</b><span>重复参赛与成绩撤销</span></a>
+          <a class="idx" href="/#deep"><b>评审批注</b><span>前 20 名的公开意见</span></a>
+          <a class="idx" href="/#guide"><b>申诉窗口</b><span>材料清单与时间点</span></a>
+          <a class="idx" href="/#rank"><b>今日吃瓜榜</b><span>加权分与分项拆解</span></a>
+        </div>
+      </section>
+
+      <!-- 板块5 深度解析 -->
+      <section class="block" id="deep" aria-labelledby="deepTitle">
+        <div class="deep">
+          <div class="lead">
+            <span class="eyebrow">深度解析</span>
+            <h2 id="deepTitle">改稿记录比作品本身更能说明问题</h2>
+            <p>11月8日的争议集中在两件事：提交后改了什么、这个改动是否影响评审判断。把 5 条作品的修改记录与评审批注按时间对齐，可以看清哪些质疑有据、哪些只是情绪。</p>
+          </div>
+          <div class="deep-body">
+            <div class="deep-main">
+              <h3>判断一：改稿两次以上的作品，评审分平均低 2.4 分</h3>
+              <p>抽查 11 月 1 日至 11 月 8 日的 142 条作品，修改 0—1 次的 96 条平均评审分 39.8，修改 2 次以上的 46 条平均 37.4。差距不能直接读成“改得多就做得差”。原因更可能是：改稿次数多的作品，往往在首次提交时缺少来源标注或结构未定，评审在“可核验”一项扣分后，作者才回头补。分差是结果，不是惩罚。</p>
+              <p>反过来说，也存在改稿后分数上升的样本。《老片里的雨天》第 8 段补标出处后，评审分从 36.0 调到 37.5，13:05 的记录写得清楚：出处补齐，版权说明由整段改为逐段。这条改动有据可查，不涉及叙述内容，所以评分变化可以解释。</p>
+              <div class="judge">
+                <p><strong>可被反驳的判断：</strong>如果只看分差，容易得出“改稿有害”的结论。但把改稿内容分成“补来源”和“改叙事”两类，前者平均提升 1.6 分，后者平均下降 0.9 分。真正影响分数的是改的是哪一类，不是次数本身。</p>
+              </div>
+
+              <h3>判断二：串场撤销的 2 例，说明判定依赖提交时间戳而非昵称相似</h3>
+              <p>11:40 的复审说明里，2 例撤销的共同点是：两个账号提交时间相隔 26 分钟和 41 分钟，作品文件哈希不同，作者实名信息不同。此前被判定串场，依据是两个昵称只差一个字符。复审后，赛务把判定规则改成“以账号实名、文件哈希、提交间隔三项中至少两项重合”为准。这个变化有明确前后差异，可以直接核对。</p>
+              <p>剩下 3 份申诉仍在处理，涉及作品相似度。相似度比对用的是画面帧与文本片段，未公开具体阈值。这里只能标为“待定”，不能替赛务下结论。已有信息里能确认的是：8 日当天没有因相似度被直接取消成绩的案例。</p>
+
+              <h3>判断三：“押金全退”这句台词的争议，核心是版本差异而非事实错误</h3>
+              <p>《三分钟退租》10:15 的第二稿把“押金全退”改成“押金扣 200 元”。评论区一位用户 10:52 留言，贴出第一稿截图，指出台词与作者自述的扣款情节冲突。这条质疑成立，但要说清层次：第一稿确实写了全退，第二稿改了；改动发生在评审批注之前还是之后，公开记录里只有提交时间，没有批注时间，所以无法判断改稿是否为了回应质疑。</p>
+              <p>可核对的三项是：第一稿提交于 11:08，第二稿 10:15 次日？不对，第二稿时间记录为 10:15，早于第一稿的 11:08，说明第一稿实际是前一天 23:40 提交、11 月 8 日 09:00 后才在页面展示。这一点在作品页版本列表里能查到，容易被截图误导。</p>
+
+              <h3>判断四：评审批注公开后，前 20 名的评论量涨了 3 倍，但有效讨论没有同比增加</h3>
+              <p>14:30 起，前 20 名作品须公开至少 2 条评审意见。到 20:00，这 20 条作品的评论总量从 214 条增至 653 条。抽看其中 120 条，含具体条目名、时间码或分项分数的只有 31 条，占 26%。其余多为“评审说得对”“看不懂批注”这类回应。公开批注提升了可见度，但没有自动提升讨论质量。</p>
+              <p>这条判断的边界要说明：抽样由人工完成，120 条不是随机全量，结论只适用于 11 月 8 日 14:30—20:00 这个窗口。跨日是否延续，需要再看 11 月 9 日的记录。</p>
+
+              <div class="panelgrid" style="margin-top:var(--sp-3)">
+                <div class="panel">
+                  <h3><span class="pip" aria-hidden="true"></span>有据可查</h3>
+                  <ul>
+                    <li>《老片里的雨天》第 8 段补标，评审分 36.0→37.5</li>
+                    <li>串场判定改为三项中两项重合</li>
+                    <li>样本由 412 条修正为 387 条，去重规则写明</li>
+                  </ul>
+                </div>
+                <div class="panel warn">
+                  <h3><span class="pip" aria-hidden="true"></span>仍待确认</h3>
+                  <ul>
+                    <li>相似度比对阈值未公开</li>
+                    <li>改稿与评审批注的先后顺序缺时间记录</li>
+                    <li>热度剔除的具体算法未披露</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <aside class="deep-side" aria-label="判断核对清单">
+              <h3>判断拆成可核对的项</h3>
+              <ul class="checks">
+                <li><span class="k">✓</span><span>作品页版本列表的提交时间</span></li>
+                <li><span class="k">✓</span><span>评审批注的公开条数与时间</span></li>
+                <li><span class="k">✓</span><span>申诉材料的提交截止点</span></li>
+                <li><span class="x">✕</span><span>相似度阈值（未公开）</span></li>
+                <li><span class="x">✕</span><span>热度剔除算法（未披露）</span></li>
+                <li><span class="k">✓</span><span>分项分数与总分的加权算式</span></li>
+              </ul>
+              <p style="font-size:var(--fs-5);color:var(--ink-3);margin:0">核对清单只列能在页面内找到对应条目的项目。找不到的标为未公开，不推测。</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块6 体验指南 -->
+      <section class="block" id="guide" aria-labelledby="guideTitle">
+        <div class="block-head">
+          <span class="eyebrow">指南</span>
+          <h2 id="guideTitle">第一次围观比赛，按这五步走</h2>
+          <span class="hint">从查时间码到看申诉材料</span>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>先确认赛道和提交时段</h3>
+            <p>点开作品页顶部的赛道标签，看提交时间是当天 09:00 前还是后。跨时段的作品，版本记录会分栏显示，别把前一天 23:40 的稿当成当天第一稿。</p>
+          </li>
+          <li>
+            <h3>数一数改了几次，改了哪里</h3>
+            <p>版本列表里有每次修改的时间。对比两次稿的差异，重点看来源标注、样本数量、版权说明这三处，它们直接影响“可核验”一项的得分。</p>
+          </li>
+          <li>
+            <h3>读评审批注，不只看总分</h3>
+            <p>14:30 后前 20 名作品至少公开 2 条批注。批注里常出现“缺来源”“样本单日”“色彩层级”这类具体词，它们比总分更能说明问题在哪。</p>
+          </li>
+          <li>
+            <h3>把评论截图和作品原件分开看</h3>
+            <p>截图只能当线索。要判断一句台词是否被改过，去看版本列表的提交时间；要判断一段素材有没有授权，去看版权说明是否逐段标注。两者对不上时，以原件为准。</p>
+          </li>
+          <li>
+            <h3>申诉材料看三点</h3>
+            <p>18:00 前提交的材料通常含时间戳截图、作者实名信息和一份说明。看材料时先找时间戳与后台记录是否一致，再看说明有没有回应评审指出的具体项。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 板块7 榜单 -->
+      <section class="block" id="rank" aria-labelledby="rankTitle">
+        <div class="block-head">
+          <span class="eyebrow">榜单</span>
+          <h2 id="rankTitle">11月8日吃瓜热度前 6 名</h2>
+          <span class="hint">加权分 = 评审 5 : 投票 3 : 热度 2</span>
+        </div>
+        <div class="card" style="padding:var(--sp-3)">
+          <ol class="rank">
+            <li><span class="nm"><b>菜市场的十二种字体</b><span>海报重排 · 评审 43.0 · 公开 3 条批注</span></span><span class="sc">42.6</span></li>
+            <li><span class="nm"><b>夜班公交末站</b><span>城市折叠 · 补充乘客同意录音 2 段</span></span><span class="sc">41.8</span></li>
+            <li><span class="nm"><b>早高峰的九站</b><span>城市折叠 · 第 7 站说明缺来源</span></span><span class="sc">41.2</span></li>
+            <li><span class="nm"><b>我妈的砍价话术</b><span>口头表达 · 评论区补第 5 轮</span></span><span class="sc">40.3</span></li>
+            <li><span class="nm"><b>旧超市小票重构</b><span>海报重排 · 数字可逐项核对</span></span><span class="sc">39.9</span></li>
+            <li><span class="nm"><b>387 条外卖备注</b><span>数据可视化 · 去重规则后补</span></span><span class="sc">38.4</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 板块8 FAQ -->
+      <section class="block" id="faq" aria-labelledby="faqTitle">
+        <div class="block-head">
+          <span class="eyebrow">问答</span>
+          <h2 id="faqTitle">当天规则与围观常见问题</h2>
+          <span class="hint">答案以赛务公告与作品页记录为依据</span>
+        </div>
+        <details>
+          <summary>每日大赛的参赛作品当天能改几次？</summary>
+          <p>按现行公告，提交后在当日 23:00 截止前可修改两次。第三次起，修改记录会在作品页公开标注，评审能看到完整版本列表。修改次数本身不直接扣分，扣分发生在“可核验”一项，比如改稿后仍缺来源标注。</p>
+        </details>
+        <details>
+          <summary>今日吃瓜榜的分数怎么算？</summary>
+          <p>榜单分由评审分、观众投票、互动热度按 5:3:2 加权。热度含评论、收藏、转发，机器批量点赞由风控剔除。以《菜市场的十二种字体》为例，评审 43.0、投票折算 40.2、热度折算 44.8，加权后 42.6，分项可在作品页展开核对。</p>
+        </details>
+        <details>
+          <summary>串场作品为什么会被取消当日成绩？</summary>
+          <p>串场指同一账号或用例在多赛道重复参赛。11 月 8 日复审后，判定改为账号实名、文件哈希、提交间隔三项中至少两项重合。此前仅凭昵称相似就判定的 2 例已撤销，成绩恢复，账号保留观察标记至 11 月 15 日。</p>
+        </details>
+        <details>
+          <summary>评论区截图能不能当作评审依据？</summary>
+          <p>截图只能作为线索。评审以作品原件、版本列表和提交后台日志为准。11 月 8 日《三分钟退租》的台词争议里，截图显示第一稿写了“押金全退”，但版本列表显示第二稿 10:15 提交，时间早于页面展示，单看截图会误判改动顺序。</p>
+        </details>
+        <details>
+          <summary>围观新作品先看哪些信息？</summary>
+          <p>看提交时间、修改次数、赛道归属三项，再看作者说明与评审批注，最后对照榜单分项。想快速判断可信度，先找来源标注和样本说明，这两处在“可核验”评分里权重最高。</p>
+        </details>
+        <details>
+          <summary>热度剔除的点赞为什么没有明细？</summary>
+          <p>风控只公布剔除总量，不公布逐条明细。11 月 8 日有 2 份申诉要求查看明细，赛务回应称明细涉及账号安全，不对外公开。这条属于规则层面的未披露项，不能据此认定某条作品刷量。</p>
+        </details>
+      </section>
+
+      <!-- 板块9 用户评论 -->
+      <section class="block" id="comments" aria-labelledby="cmTitle">
+        <div class="block-head">
+          <span class="eyebrow">评论</span>
+          <h2 id="cmTitle">评论区里的几种声音</h2>
+          <span class="hint">摘自作品页公开评论，保留原话措辞</span>
+        </div>
+        <div class="cmts">
+          <div class="cmt">
+            <div class="ava" style="background:#c2410c">林</div>
+            <div>
+              <div class="who"><b>林间有雾</b><span>11-08 10:52</span><span>评论《三分钟退租》</span></div>
+              <p>第一稿截图里明明写着“押金全退”，作者自述又说扣了 200 元。<span class="ref">《三分钟退租》</span>这个改动挺好，但改之前那句话就悬在那，评审没看到吗？</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#0f766e">陈</div>
+            <div>
+              <div class="who"><b>陈小满</b><span>11-08 12:03</span><span>评论《菜市场的十二种字体》</span></div>
+              <p><span class="ref">《菜市场的十二种字体》</span>的采集表做得实在，12 家摊位编号、拍摄时间都列了。比那些只写“实地考察”的强。就是第 9 家字体颜色偏浅，打印出来糊了。</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#b45309">周</div>
+            <div>
+              <div class="who"><b>周三下午</b><span>11-08 13:41</span><span>评论串场判定</span></div>
+              <p>串场撤销 2 例是应该的，昵称差一个字就判重，太草率。不过另外 3 份相似度申诉一直没结果，18:00 窗口关了，明天 10:00 复核会能不能给个说法？</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#44403c">吴</div>
+            <div>
+              <div class="who"><b>老吴看片</b><span>11-08 15:20</span><span>评论《老片里的雨天》</span></div>
+              <p><span class="ref">《老片里的雨天》</span>补标之后好多了，第 8 段是 1994 年那部，时间码 01:12:30。之前整段没写出处，确实该扣。补完从 36 调到 37.5，算合理。</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#15803d">何</div>
+            <div>
+              <div class="who"><b>何必呢</b><span>11-08 17:08</span><span>评论评审批注公开</span></div>
+              <p>批注公开是好事，但 14:30 之后评论区多了几百条“评审说得对”，翻半天找不到一条说具体问题的。公开了不等于看懂了。</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#7c2d12">赵</div>
+            <div>
+              <div class="who"><b>赵阿吉</b><span>11-08 19:33</span><span>评论《387 条外卖备注》</span></div>
+              <p><span class="ref">《387 条外卖备注》</span>去重规则补得及时，412 改成 387，差 25 条。但图表里“不要香菜”61 次，有没有把“免香菜”算进去？这个没说清。</p>
+            </div>
+          </div>
+          <div class="cmt">
+            <div class="ava" style="background:#0f766e">许</div>
+            <div>
+              <div class="who"><b>许一川</b><span>11-08 20:41</span><span>评论《夜班公交末站》</span></div>
+              <p>补了 46 秒录音，态度可以。不过 6 位乘客是不是都录了？只上传 2 段，剩下 4 位的同意记录在哪，作者没提。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 板块10 相关资讯 -->
+      <section class="block" id="news" aria-labelledby="newsTitle">
+        <div class="block-head">
+          <span class="eyebrow">资讯</span>
+          <h2 id="newsTitle">与今天争议相关的几条记录</h2>
+          <span class="hint">各条落在不同信息层，不互相复述</span>
+        </div>
+        <div class="news">
+          <a href="/#deep"><span class="d">11-08</span><span class="h">复审规则改成三项取两项，串场判定有了可核对标准<span class="s">对应深度解析“判断二”，含时间戳与哈希依据</span></span></a>
+          <a href="/#guide"><span class="d">11-08</span><span class="h">申诉窗口 18:00 关闭，5 份材料中 3 份涉及作品相似度<span class="s">对应围观指南第五步，材料看三点</span></span></a>
+          <a href="/#latest"><span class="d">11-08</span><span class="h">《387 条外卖备注》样本修正，去重规则写进图表注释<span class="s">对应更新记录 16:00 条目</span></span></a>
+          <a href="/#rank"><span class="d">11-08</span><span class="h">吃瓜热度前 6 名中，4 条作品今天有补充说明或修改<span class="s">对应榜单分项，可在作品页展开核对</span></span></a>
+        </div>
+      </section>
+
+      <!-- 板块11 相关推荐 -->
+      <section class="block" id="related" aria-labelledby="relTitle">
+        <div class="block-head">
+          <span class="eyebrow">相关推荐</span>
+          <h2 id="relTitle">接着可以看这些具体条目</h2>
+        </div>
+        <div class="recs">
+          <a href="/#picks">城市折叠赛道今日 9 条</a>
+          <a href="/#deep">改稿次数与评审分的对照样本</a>
+          <a href="/#guide">提交后改稿两次的操作顺序</a>
+          <a href="/#faq">热度剔除为什么没有逐条明细</a>
+          <a href="/#comments">《三分钟退租》台词截图争议</a>
+          <a href="/#latest">11月8日 09:00 换榜记录</a>
+          <a href="/#rank">评审 5 : 投票 3 : 热度 2 分项</a>
+          <a href="/#picks">《菜市场的十二种字体》采集表</a>
+          <a href="/#news">串场判定三项取两项规则</a>
+        </div>
+      </section>
+
+      <!-- 板块12 创作者证言 -->
+      <section class="block" id="voices" aria-labelledby="voiceTitle">
+        <div class="block-head">
+          <span class="eyebrow">证言</span>
+          <h2 id="voiceTitle">两位作者谈改稿与公开批注</h2>
+        </div>
+        <figure class="quote">
+          <blockquote>“我把 12 家摊位的采集时间全列在附录里，评审在可核验一项给了满分。改稿我一次没改，不是做得完美，是提交前把该标的都标了。”</blockquote>
+          <figcaption>——《菜市场的十二种字体》作者，11月8日 14:20 于作品页留言</figcaption>
+        </figure>
+        <figure class="quote" style="background:linear-gradient(135deg,#9a3412,#7c2d12);margin-top:var(--sp-3)">
+          <blockquote>“第 8 段补标花了二十分钟，之前整段漏了出处被扣分，认。公开批注之后，至少知道扣在哪，不用靠猜。”</blockquote>
+          <figcaption>——《老片里的雨天》作者，11月8日 15:47 于作品页留言</figcaption>
+        </figure>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="aside" aria-label="侧栏导航与速览">
+      <nav class="side-card" aria-labelledby="sideNavTitle">
+        <h2 id="sideNavTitle">本页栏目</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picks">今日精选</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">围观指南</a></li>
+          <li><a href="/#rank">今日榜单</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#voices">创作者证言</a></li>
+        </ul>
+      </nav>
+      <div class="side-card">
+        <h3>今日待办时间点</h3>
+        <ul class="mini">
+          <li><b>18:00 申诉截止</b><span>已关闭，收 5 份材料</span></li>
+          <li><b>23:00 成绩锁定</b><span>锁定后进入次日复核</span></li>
+          <li><b>次日 10:00 复核会</b><span>涉相似度 3 份待说明</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>高频检索词</h3>
+        <div class="side-tags">
+          <span class="tag">串场判定</span>
+          <span class="tag cool">改稿记录</span>
+          <span class="tag gray">热度剔除</span>
+          <span class="tag">可核验评分</span>
+          <span class="tag cool">评审批注</span>
+          <span class="tag gray">版本列表</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h3>站内查找</h3>
+        <p style="font-size:var(--fs-5);color:var(--ink-3);margin:0">页头搜索框支持赛道名、作品名和时间线关键词，输入后回车即可定位到对应栏目；无匹配时会在搜索框下方提示。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="foot" id="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brandline">
+          <svg viewBox="0 0 32 32" role="img" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#c2410c"></rect>
+            <path d="M8.5 23.5 14 9.5l4 6.6 5.5-8.2v15.6z" fill="#fff7ed"></path>
+            <circle cx="24.4" cy="9.4" r="2.6" fill="#fdba74"></circle>
+          </svg>
+          <span>51每日大赛今日吃瓜</span>
+        </div>
+        <p>把作品页的时间码、版本记录和评审批注摊开对照，看清当天比赛里哪条说法有据、哪条还停在转述层面。</p>
+      </div>
+      <div>
+        <h3>赛程与记录</h3>
+        <ul>
+          <li><a href="/#overview">赛道与计分口径</a></li>
+          <li><a href="/#latest">更新记录时间线</a></li>
+          <li><a href="/#rank">今日吃瓜热度榜</a></li>
+          <li><a href="/#channels">频道分类索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>判断与核对</h3>
+        <ul>
+          <li><a href="/#deep">改稿记录深度解析</a></li>
+          <li><a href="/#guide">围观五步指南</a></li>
+          <li><a href="/#faq">规则常见问答</a></li>
+          <li><a href="/#comments">评论区样本</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与与反馈</h3>
+        <ul>
+          <li><a href="/#related">相关条目推荐</a></li>
+          <li><a href="/#news">争议相关资讯</a></li>
+          <li><a href="/#voices">作者证言</a></li>
+          <li><a href="/#top">回到首屏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>示例数据说明：榜单分、评论与版本时间均为演示用示例，非官方赛务数据。页面更新于 2026-11-08 21:10，对应可核对项为 20:20《夜班公交末站》补充录音记录。</span>
+      <span>© 2026 51每日大赛今日吃瓜 · 内容整理</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到页面顶部" type="button">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('nav');
+  function closeNav(){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.matchMedia('(max-width:880px)').matches){closeNav();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeNav();menuBtn.focus();}});
+
+  /* 搜索 */
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('q');
+  var msg=document.createElement('p');
+  msg.className='search-msg';
+  msg.setAttribute('role','status');
+  form.appendChild(msg);
+  var map=[
+    {k:['城市折叠','早高峰','夜班公交','通勤'],id:'picks'},
+    {k:['微短剧','退租','台词'],id:'faq'},
+    {k:['海报','菜市场','字体','小票'],id:'picks'},
+    {k:['数据可视化','外卖备注','电梯'],id:'deep'},
+    {k:['口头表达','砍价'],id:'picks'},
+    {k:['混剪','老片','雨天'],id:'latest'},
+    {k:['串场','复审','申诉','相似度'],id:'deep'},
+    {k:['榜单','加权','热度','剔除'],id:'rank'},
+    {k:['改稿','修改','版本'],id:'deep'},
+    {k:['评论','截图'],id:'comments'},
+    {k:['评审批注','批注'],id:'latest'},
+    {k:['攻略','指南','步骤'],id:'guide'},
+    {k:['问答','规则'],id:'faq'}
+  ];
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=input.value.trim().toLowerCase();
+    msg.classList.remove('on');msg.textContent='';
+    if(!q) return;
+    var hit=map.find(function(item){return item.k.some(function(w){return w.toLowerCase().indexOf(q)>-1 || q.indexOf(w.toLowerCase())>-1;});});
+    if(hit){
+      var el=document.getElementById(hit.id);
+      if(el){
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        el.setAttribute('tabindex','-1');el.focus({preventScroll:true});
+        return;
+      }
+    }
+    msg.textContent='没有找到“'+input.value.trim()+'”相关的赛道或作品，换个关键词试试，比如：串场、改稿、热度。';
+    msg.classList.add('on');
+  });
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  var ticking=false;
+  function onScroll(){
+    if(window.scrollY>560){toTop.classList.add('on');}else{toTop.classList.remove('on');}
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){
+    if(!ticking){window.requestAnimationFrame(onScroll);ticking=true;}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+    var f=document.querySelector('.brand');if(f){f.focus({preventScroll:true});}
+  });
+
+  /* 侧栏滚动高亮 */
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(2));}).filter(Boolean);
+  if('IntersectionObserver' in window && targets.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+en.target.id);});
+        }
+      });
+    },{rootMargin:'-120px 0px -60% 0px',threshold:0});
+    targets.forEach(function(t){io.observe(t);});
+  }
+})();
+</script>
+</body>
+              </html>
